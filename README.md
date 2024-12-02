@@ -1,12 +1,39 @@
-# SiamTFA
-SiamTFA: A high-precision and high-speed RGBT tracker.
+# SiamTFA: Siamese Triple-stream Feature Aggregation Network for Efficient RGBT Tracking
+The paper was accepted by the IEEE Transactions on Intelligent Transportation Systems.
 
-Demonstration of some tracking results:
+## Install the environment
+Install virtual environment and dependency packages.
+```bash
+conda create -n siamtfa python=3.7
+conda activate siamtfa
+pip install -r requirements.txt
+```
 
-(The green boxes are the ground truth and the red boxes are the results predicted by SiamTFA.)
-![Demo1](/demo1.gif)
+Create the default environment setting files.
+```
+# Environment settings for pytracking. Saved at pytracking/evaluation/local.py
+python -c "from pytracking.evaluation.environment import create_default_local_file; create_default_local_file()"
 
-![Demo2](/demo2.gif)
+# Environment settings for ltr. Saved at ltr/admin/local.py
+python -c "from ltr.admin.environment import create_default_local_file; create_default_local_file()"
+```
 
-![Demo3](/demo3.gif)
+Then set the paths of the project and dataset in "SiamTFA/ltr/admin/local.py" and "SiamTFA/pytracking/evaluation/local.py".
 
+## Training
+Set teh training parameters in  "SiamTFA/ltr/train_settings/siamtfa/siamtfa_tracker_settings.py".
+
+Then run:
+```
+python SiamTFA/ltr/run_training.py
+```
+
+## Testing
+Set the model weight path in "SiamTFA/pytracing/parameter/siamtfa/siamtfa.py".
+
+Set the dataset to be evaluated in in "SiamTFA/pytracking/run_tracker.py".
+
+Then run:
+```
+python SiamTFA/pytracking/run_tracker.py
+```
