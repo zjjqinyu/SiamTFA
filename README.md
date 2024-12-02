@@ -21,7 +21,7 @@ python -c "from ltr.admin.environment import create_default_local_file; create_d
 Then set the paths of the project and dataset in "ltr/admin/local.py" and "pytracking/evaluation/local.py".
 
 ## Training
-Set teh training parameters in  "ltr/train_settings/siamtfa/siamtfa_tracker_settings.py".
+Set the training parameters in  "ltr/train_settings/siamtfa/siamtfa_tracker_settings.py".
 
 Then run:
 ```
