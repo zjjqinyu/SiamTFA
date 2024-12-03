@@ -43,5 +43,5 @@ Download the tracking results from [Baidu Netdisk](https://pan.baidu.com/s/1n31M
 Download the model weights from [Baidu Netdisk](https://pan.baidu.com/s/1koibm_DHj194yHpihfyf8Q?pwd=143t) code: 143t
 
 ## Acknowledgments
-* Thanks for the [PyTracking](https://github.com/visionml/pytracking) and [OSTrack](https://github.com/botaoye/OSTrack) library, which helps us to quickly implement our ideas.
+Thanks for the [PyTracking](https://github.com/visionml/pytracking) and [OSTrack](https://github.com/botaoye/OSTrack) library, which helps us to quickly implement our ideas.
 
