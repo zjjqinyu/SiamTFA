@@ -2,9 +2,9 @@ import torch
 from torch import nn
 from torchvision.models import swin_b, Swin_B_Weights
 
-class CafaMoudle(nn.Module):
+class JcfaMoudle(nn.Module):
     def __init__(self, in_channels, out_channels, stride):
-        super(CafaMoudle, self).__init__()
+        super(JcfaMoudle, self).__init__()
         self.conv1 = nn.Sequential(
                     nn.Conv2d(in_channels=in_channels, out_channels=out_channels, kernel_size=1, stride=1),
                     nn.BatchNorm2d(out_channels),
@@ -75,7 +75,7 @@ class TfaSwinBackbone(nn.Module):
         in_channels_list = [6, 128, 256, 512]
         out_channels_list = [128, 256, 512, 1024]
         stride_list = [4, 2, 2, 2]
-        self.fus_stage_list = nn.ModuleList([CafaMoudle(in_channels, out_channels, stride)
+        self.fus_stage_list = nn.ModuleList([JcfaMoudle(in_channels, out_channels, stride)
                                              for in_channels, out_channels, stride in zip(in_channels_list, out_channels_list, stride_list)])
 
     def forward(self, rgb_img, aux_img):

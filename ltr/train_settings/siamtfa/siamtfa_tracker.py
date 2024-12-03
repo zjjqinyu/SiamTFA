@@ -17,14 +17,8 @@ def run(settings):
     settings = get_tracker_settings(settings)
 
     # Train datasets
-    # gtot = GTOT()
-    # rgbt234 = RGBT234()
     lasher_train = LasHeR(split='train')
     lasher_test = LasHeR(split='test')
-    # vtuav_train_ST = VTUAV(split='train_ST')
-    # vtuav_train_LT = VTUAV(split='train_LT')
-    # vtuav_test_ST = VTUAV(split='test_ST')
-    # vtuav_test_LT = VTUAV(split='test_LT')
 
     # Data transform
     transform_joint = tfm.Transform(tfm.ToGrayscale(probability=0.05),
