@@ -31,11 +31,9 @@ python ltr/run_training.py
 ## Testing
 Set the model weight path in "pytracing/parameter/siamtfa/siamtfa.py".
 
-Set the dataset to be evaluated in in "pytracking/run_tracker.py".
-
 Then run:
 ```
-python pytracking/run_tracker.py
+python pytracking/run_tracker.py --dataset_name rgbt234
 ```
 ## Tracking results
 Download the tracking results from [Baidu Netdisk](https://pan.baidu.com/s/1n31MZ32ZNzSuYhaRsd-X5Q?pwd=pm6p) code: pm6p
