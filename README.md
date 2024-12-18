@@ -11,7 +11,7 @@ If our work is useful for your research, please consider citing:
   title={SiamTFA: Siamese Triple-Stream Feature Aggregation Network for Efficient RGBT Tracking}, 
   year={2024},
   doi={10.1109/TITS.2024.3512551}}
-
+```
 
 ## Install the environment
 Install virtual environment and dependency packages.
