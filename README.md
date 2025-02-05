@@ -9,7 +9,10 @@ If our work is useful for your research, please consider citing:
   author={Zhang, Jianming and Qin, Yu and Fan, Shimeng and Xiao, Zhu and Zhang, Jin},
   journal={IEEE Transactions on Intelligent Transportation Systems}, 
   title={SiamTFA: Siamese Triple-Stream Feature Aggregation Network for Efficient RGBT Tracking}, 
-  year={2024},
+  year={2025},
+  volume={26},
+  number={2},
+  pages={1900-1913},
   doi={10.1109/TITS.2024.3512551}}
 ```
 
